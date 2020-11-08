@@ -8,7 +8,7 @@
     <body>
 
         <div class= "banner">
-            <video loop>
+            <video muted loop>
                 <source src= "/spiral.mp4" type="video/mp4">
             </video>
         </div>
@@ -23,13 +23,13 @@
         </ul>
 
         <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
-        <audio src="" id= "audioPlayer" controls="none"></audio>
+        <audio src="" id= "audioPlayer" controls="none" style="display:none"></audio>
         <script src="audioPlayer.js"></script>
 
 
         <script>
         var config ={
-            autoplay: false,
+            autoplay: true,
             loop:true,
             shuffle:true,
         };
