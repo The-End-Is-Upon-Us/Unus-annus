@@ -8,27 +8,22 @@
     <body>
 
         <div class= "banner">
-<<<<<<< HEAD:index.html
             <video autoplay muted loop>
-                <iframe src="https://www.youtube-nocookie.com/embed/YhRqZEKFRJ8?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" type="video/mp4">
-=======
-            <video muted loop>
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YhRqZEKFRJ8?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> 5805ab6983cafe9ffb8148b4de4c79c578d7f43a:Unus Annus.html
+                <source src= "/spiral.mp4" type="video/mp4">
             </video>
         </div>
 
 
         </audio>
         <ul id="playlist">
-            <li><a href="https://github.com/The-End-Is-Upon-Us/Unus-annus/blob/master/music/In%20the%20End.mp3"></a></li>
-            <li><a href="music/Mr. Kill Myself.mp3"></a></li>
-            <li><a href="https://www.youtube.com/watch?v=ZWewLLw60U8"></a></li>
-            <li><a href="music/stargazing.mp3"></a></li>
+            <li><a href="/music/In the End.mp3"></a></li>
+            <li><a href="/music/Mr. Kill Myself.mp3"></a></li>
+            <li><a href="/music/Turncoat.mp3"></a></li>
+            <li><a href="/music/stargazing.mp3"></a></li>
         </ul>
 
         <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
-        <iframe src="" allow="autoplay" style="display:none" id="audioPlaayer" controls="none"</iframe>
+        <audio src="" id= "audioPlayer" controls="none" style="display:none"></audio>
         <script src="audioPlayer.js"></script>
 
 
@@ -88,7 +83,7 @@ function countdown(){
 				document.getElementById("days").textContent = d + ":" ;
 				document.getElementById("days").innerText = d + ":";
 
-				document.getElementById("hours").textContent = h + ":";
+				document.getElementById("hours").textContent = h;
 				document.getElementById("minutes").textContent = m + ":";
 				document.getElementById("seconds").textContent = s;
 
